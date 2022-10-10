@@ -92,7 +92,7 @@ class EditorJSViewState extends State<EditorJSView> {
                     if (style == 'ordered') {
                       bullet = counter.toString();
                       items.add(
-                        Row(children: [
+                        Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
                           Container(
                               child: Html(
                             data: bullet + element,
@@ -109,6 +109,7 @@ class EditorJSViewState extends State<EditorJSView> {
                     } else {
                       items.add(
                         Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Container(
                               child: Html(
