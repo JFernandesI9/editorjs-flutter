@@ -170,6 +170,6 @@ class EditorJSViewState extends State<EditorJSView> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: items);
+    return Flex(direction: Axis.vertical, children: items);
   }
 }
